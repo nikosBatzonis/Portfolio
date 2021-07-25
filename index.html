@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-expand-md" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#profile">Profile</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#portFoLio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#abilities">Abilities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="home" style="width: 70px"><img src="data:image/png;base64,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"
+                            alt="englisch flagge" style="width: 100%" /></a>
+                    <a href="deutsch" style="width: 140px"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANwAAACTCAMAAADSiocKAAAACVBMVEUAAADdAAD/zgDGIigcAAAAiElEQVR4nO3PAQEAIAzAoGv/0ObYhQbMAAAAAAAAAAAAAPCvs5hclVyVXJVclVyVXJVclVyVXJVclVyVXJVclVyVXJVclVyVXJVclVyVXJVclVyVXNXcxeSq5KrkquSq5KrkquSq5KrkquSq5KrkquSq5KrkquSq5KrkquSq5KrkquSq5Krkqh6p735V06ByEQAAAABJRU5ErkJggg=="
+                            alt="deutsch flagge" style="width: 30%" /></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="row container row-home" style="margin-top: 5%">
+            <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 name">
+                <h3>
+                    Nikolaos <br /> Batzonis
+                </h3>
+                <p>Frontend Web Developer</p>
+                <p class="par">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus aperiam itaque at, repellat est dolore.
+                </p>
+            </div>
+            <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <img class="myPhoto" src="images\pf2.jpg" alt="My photo" />
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h2 id="profile" style="text-align: center; margin-top: 10%; margin-bottom: 10%">
+            Profile
+        </h2>
+        <div class="container">
+            <div class="row row-about" style="margin-bottom: 10%">
+                <div class="col-12 col-xs-12 col-sm-12 col-md-5 col-lg-5 aboutMe">
+                    <h3 style="padding-top: 10px">About me</h3>
+                    <p class="about">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad quae voluptate eveniet iusto fugiat temporibus eaque quibusdam aspernatur commodi corrupti consequuntur suscipit minima quos, nesciunt excepturi velit asperiores nobis sequi explicabo eius mollitia
+                        ipsam maiores! Nisi cupiditate eos deleniti fugit? Laboriosam iste optio quas libero doloribus blanditiis harum debitis eligendi!
+                    </p>
+                </div>
+                <div class="col-12 col-xs-12 col-sm-12 col-md-3 col-lg-3 ph">
+                    <img class="photo-profile" src="images\pf1.jpg " alt="My photo " />
+                </div>
+                <div class="
+              col-12 col-xs-12 col-sm-12 col-md-4 col-lg-3
+              d-flex
+              align-items-center
+              justify-content-center
+              flex-column
+              detail
+            " style="text-align: center">
+                    <h3 class="det">Details</h3>
+                    <p><span>Name:</span> Nikolaos Batzonis</p>
+                    <p><span>Age:</span> 39</p>
+                    <p>
+                        <span>Location:</span> Franz guggenbergerstrasse 28, Korneuburg
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <h2 id="portFoLio" class="text-center portfol">Portfolio</h2>
+    <div class="row" id="portFolio"></div>
+
+    <div class="container">
+        <h2 id="abilities" style="text-align: center; margin-bottom: 20%">
+            Abilities
+        </h2>
+        <div class="row d-flex justify-content-around text-center" style="margin-bottom: 20%">
+            <div class="col col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                <img class="logo" src="images\vs.png" alt="" />
+            </div>
+            <div class="col col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                <img class="logo" src="images\html.png" alt="" />
+            </div>
+            <div class="col col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                <img class="logo" src="images\css.png" alt="" />
+            </div>
+            <div class="col col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                <img class="logo" src="images\js.png" alt="" />
+            </div>
+            <div class="col col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                <img class="logo" src="images\json.png" alt="" />
+            </div>
+            <div class="col col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                <img class="logo" src="images\angular.png" alt="" />
+            </div>
+            <div class="col col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                <img class="logo" src="images\ts.webp" alt="" />
+            </div>
+            <div class="col col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                <img class="logo" src="images\sass.png" alt="" />
+            </div>
+            <div class="col col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                <img class="logo" src="images\bootstrap.png" alt="" />
+            </div>
+            <div class="col col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                <img class="logo" src="images\git.png" alt="" />
+            </div>
+        </div>
+    </div>
+
+    <h2 id="contact" style="text-align: center; padding-bottom: 80px; padding-top: 50px">
+        Contact
+    </h2>
+    <div class="container" style="padding-bottom: 50px">
+        <div class="row contact">
+            <div class="col-12 col-sm-10 col-md-6 col-lg-6">
+                <a class="a" href="n.batzonis@gmail.com ">
+                    <img class="email img" src="images\email.png " alt="email " />n.batzonis@gmail.com</a>
+            </div>
+            <div class="col-12 col-sm-10 col-md-6 col-lg-6 d-flex a">
+                <img class="tel img" src="images\tel.png " alt="Tel " />
+                <p class="number">+43 680 320 0863</p>
+            </div>
+        </div>
+        <div class="row contact">
+            <div class="col-12 col-sm-10 col-md-6 col-lg-6">
+                <a class="a" href="https://github.com/nikosBatzonis ">
+                    <img class="github img" src="images\github.png " alt="gitHub " />https://github.com/nikosBatzonis</a>
+            </div>
+            <div class="col-12 col-sm-10 col-md-6 col-lg-6 d-flex">
+                <a class="a" href="https://join.skype.com/invite/meymDmFvARkh ">
+                    <img class="skype img" src="images\skype.png " alt="skype " />Nikos Batzonis
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="data.json "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM " crossorigin="anonymous "></script>
+    <script src="script.js "></script>
+</body>
+
+</html>

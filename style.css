@@ -1,0 +1,496 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    /* background-color: #ddc3a5; */
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0;
+    background: linear-gradient(#f3ca95, #a78b65, #746146);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+p,
+h2,
+h3 {
+    color: #201e20;
+}
+
+.aboutMe,
+.detail,
+.name {
+    background: #e0a96d;
+    /* color: rgb(207, 31, 17); */
+}
+
+
+/* Navbar */
+
+#navbar {
+    background-color: #201e20;
+}
+
+#navbar a {
+    display: block;
+    color: #ddc3a5;
+    padding: 15px;
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    color: #e0a96d;
+}
+
+.images {
+    width: 100%;
+}
+
+
+/* Home*/
+
+.myPhoto {
+    width: 750px;
+}
+
+.myPhoto,
+.name,
+.aboutMe,
+.photo-profile,
+.detail {
+    border: 4px solid rgb(193, 193, 193);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    margin-left: 10px;
+}
+
+.par {
+    width: 250px;
+    text-align: center;
+}
+
+.row-home {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/* h2 {
+    text-shadow: 2px 2px 5px rgb(207, 31, 17);
+} */
+
+
+/* .shadow {
+    box-shadow: 10px 10px 5px rgb(207, 31, 17);
+} */
+
+
+/* Profile */
+
+span {
+    font-weight: bold;
+}
+
+.photo-profile {
+    border-radius: 10% 10% 50% 70%;
+    width: 80%;
+    -webkit-border-radius: 10% 10% 50% 70%;
+    -moz-border-radius: 10% 10% 50% 70%;
+    -ms-border-radius: 10% 10% 50% 70%;
+    -o-border-radius: 10% 10% 50% 70%;
+}
+
+.ph,
+.aboutMe,
+.detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about {
+    width: 75%;
+    margin: 0;
+    margin-top: 10%;
+    padding-bottom: 20px;
+}
+
+.det,
+.portfol {
+    margin-bottom: 10%;
+}
+
+#portFolio {
+    margin-bottom: 5%;
+}
+
+.aboutMe,
+.detail,
+.name {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    text-align: justify;
+    flex-direction: column;
+}
+
+
+/* Portfolio */
+
+.imgLet {
+    color: #e0a96d;
+}
+
+.imgLet-a:hover {
+    color: #ddc3a5;
+}
+
+.flip-box {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    /*border: 1px solid #f1f1f1; */
+    perspective: 1000px;
+    /* Removethisifyoudon'twantthe3Deffect */
+}
+
+
+/* This container is needed to position the front and back side */
+
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1.8s;
+    transform-style: preserve-3d;
+    -webkit-transition: transform 1.8s;
+    -moz-transition: transform 1.8s;
+    -ms-transition: transform 1.8s;
+    -o-transition: transform 1.8s;
+}
+
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
+
+
+/* Position the front and back side */
+
+.flip-box-front,
+.flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+
+/* Style the front side (fallback if image is missing) */
+
+.flip-box-front {
+    background-color: #201e20;
+    color: #e0a96d;
+    padding: 10px;
+}
+
+
+/* Style the back side */
+
+.flip-box-back {
+    background-color: #201e20;
+    color: #e0a96d;
+    transform: rotateY(180deg);
+    padding-top: 50px;
+}
+
+
+/* Abilities */
+
+.logo {
+    padding-bottom: 20px;
+}
+
+
+/* Contact */
+
+.img {
+    width: 40px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+}
+
+.number {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.contact a:hover,
+.contact p:hover {
+    color: #ddc3a5;
+}
+
+.a {
+    text-decoration: none;
+    color: #201e20;
+}
+
+
+/* @media for profile */
+
+@media screen and (max-width: 1024px) {
+    .ph {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    h3 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .myPhoto {
+        width: 520px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .myPhoto {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .row-home {
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .name {
+        width: 320px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h3 {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .photo-profile {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .detail {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .ph {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .myPhoto {
+        width: 370px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .row-home {
+        justify-content: center;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .name {
+        margin-bottom: 10px;
+        padding-top: 10px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .ph {
+        width: 250px;
+        margin-bottom: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .detail {
+        width: 300px;
+        padding-top: 10px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .row-about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .about {
+        width: 85%;
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .ph {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .aboutMe {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    h3 {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .a,
+    p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .logo {
+        width: 50px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .img {
+        width: 30px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .myPhoto {
+        width: 320px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .ph {
+        width: 180px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .name {
+        margin-bottom: 10px;
+        width: 280px;
+        padding-top: 10px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .facebook {
+        width: 28px;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .a {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .tel,
+    .email,
+    .github {
+        width: 26px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .myPhoto {
+        width: 260px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .name {
+        width: 220px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .logo {
+        width: 40px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .img {
+        width: 20px;
+    }
+}
