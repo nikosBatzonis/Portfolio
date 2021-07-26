@@ -57,7 +57,9 @@ h3 {
 /* Home*/
 
 .myPhoto {
-    width: 750px;
+    width: 50%;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .myPhoto,
@@ -77,18 +79,40 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 400px;
-    margin-left: 10px;
+    width: 35%;
+    border-radius: 10px;
+    flex-direction: column;
 }
 
 .par {
-    width: 250px;
+    width: 80%;
     text-align: center;
 }
 
 .row-home {
     display: flex;
     justify-content: flex-end;
+}
+
+@media screen and (max-width: 710px) {
+    .row-home {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .name {
+        width: 75%;
+        margin-bottom: 10px;
+        padding-top: 15px;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .myPhoto {
+        width: 80%;
+    }
 }
 
 
@@ -110,23 +134,45 @@ span {
 
 .photo-profile {
     border-radius: 10% 10% 50% 70%;
-    width: 80%;
+    width: 20%;
     -webkit-border-radius: 10% 10% 50% 70%;
     -moz-border-radius: 10% 10% 50% 70%;
     -ms-border-radius: 10% 10% 50% 70%;
     -o-border-radius: 10% 10% 50% 70%;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-.ph,
-.aboutMe,
-.detail {
+.row-about {
     display: flex;
     justify-content: center;
+    margin-bottom: 10%;
+}
+
+@media screen and (max-width: 710px) {
+    .row-about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.aboutMe {
+    width: 40%;
+    display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 709px) {
+    .aboutMe {
+        width: 80%;
+    }
 }
 
 .about {
-    width: 75%;
+    width: 80%;
     margin: 0;
     margin-top: 10%;
     padding-bottom: 20px;
@@ -141,9 +187,41 @@ span {
     margin-bottom: 5%;
 }
 
+.detail {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 709px) {
+    .detail {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 381px) {
+    .detail {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 323px) {
+    .detail {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .photo-profile {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 30%;
+    }
+}
+
 .aboutMe,
-.detail,
-.name {
+.detail {
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -233,16 +311,80 @@ span {
 /* Abilities */
 
 .logo {
-    padding-bottom: 20px;
+    width: 100%;
+}
+
+.logos {
+    margin-right: 2%;
 }
 
 
 /* Contact */
 
 .img {
-    width: 40px;
+    width: 8%;
     margin-bottom: 5px;
     margin-right: 15px;
+}
+
+.skype {
+    width: 16%;
+    margin-bottom: 5px;
+    margin-right: 15px;
+}
+
+@media screen and (max-width: 1198px) {
+    .skype {
+        width: 14%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .skype {
+        width: 11%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .skype {
+        width: 14%;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .img {
+        width: 6%;
+    }
+}
+
+@media screen and (max-width: 518px) {
+    .skype {
+        width: 12%;
+    }
+}
+
+@media screen and (max-width: 452px) {
+    .skype {
+        width: 11%;
+    }
+}
+
+@media screen and (max-width: 392px) {
+    .skype {
+        width: 10%;
+    }
+}
+
+@media screen and (max-width: 344px) {
+    .skype {
+        width: 9%;
+    }
+}
+
+@media screen and (max-width: 304px) {
+    .skype {
+        width: 8%;
+    }
 }
 
 .number {
@@ -265,12 +407,6 @@ span {
 /* @media for profile */
 
 @media screen and (max-width: 1024px) {
-    .ph {
-        width: 300px;
-    }
-}
-
-@media screen and (max-width: 1024px) {
     p {
         font-size: 14px;
     }
@@ -279,36 +415,6 @@ span {
 @media screen and (max-width: 1024px) {
     h3 {
         font-size: 25px;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .myPhoto {
-        width: 520px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .about {
-        text-align: left;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .myPhoto {
-        width: 350px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .row-home {
-        margin-left: 30px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .name {
-        width: 320px;
     }
 }
 
@@ -321,88 +427,6 @@ span {
 @media screen and (max-width: 768px) {
     p {
         font-size: 13px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .photo-profile {
-        margin-top: 50px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .detail {
-        width: 150px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .ph {
-        width: 250px;
-    }
-}
-
-@media screen and (max-width: 425px) {
-    .myPhoto {
-        width: 370px;
-    }
-}
-
-@media screen and (max-width: 425px) {
-    .row-home {
-        justify-content: center;
-        margin: 0;
-    }
-}
-
-@media screen and (max-width: 425px) {
-    .name {
-        margin-bottom: 10px;
-        padding-top: 10px;
-    }
-}
-
-@media screen and (max-width: 425px) {
-    .ph {
-        width: 250px;
-        margin-bottom: 10%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-@media screen and (max-width: 425px) {
-    .detail {
-        width: 300px;
-        padding-top: 10px;
-    }
-}
-
-@media screen and (max-width: 425px) {
-    .row-about {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-@media screen and (max-width: 425px) {
-    .about {
-        width: 85%;
-        text-align: justify;
-    }
-}
-
-@media screen and (max-width: 425px) {
-    .ph {
-        width: 200px;
-    }
-}
-
-@media screen and (max-width: 425px) {
-    .aboutMe {
-        width: 80%;
     }
 }
 
@@ -419,78 +443,8 @@ span {
     }
 }
 
-@media screen and (max-width: 425px) {
-    .logo {
-        width: 50px;
-    }
-}
-
-@media screen and (max-width: 425px) {
-    .img {
-        width: 30px;
-    }
-}
-
-@media screen and (max-width: 375px) {
-    .myPhoto {
-        width: 320px;
-    }
-}
-
-@media screen and (max-width: 375px) {
-    .ph {
-        width: 180px;
-    }
-}
-
-@media screen and (max-width: 375px) {
-    .name {
-        margin-bottom: 10px;
-        width: 280px;
-        padding-top: 10px;
-    }
-}
-
-@media screen and (max-width: 375px) {
-    .facebook {
-        width: 28px;
-    }
-}
-
 @media screen and (max-width: 374px) {
     .a {
         font-size: 10px;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .tel,
-    .email,
-    .github {
-        width: 26px;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .myPhoto {
-        width: 260px;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .name {
-        width: 220px;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .logo {
-        width: 40px;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .img {
-        width: 20px;
     }
 }

@@ -13,7 +13,7 @@ for (let i = 0; i < portfolio.length; i++) {
                                     <h4 class="imgLet">${portfolio[i].them}</h4>
                                     <a class ="imgLet imgLet-a" href="${portfolio[i].vercel}" style="text-decoration:none;">Look at the project</a>
                                  <p class="imgLet">${portfolio[i].skills}</p>
-                                 <p class="imgLet">${portfolio[i].skills}</p>
+                                 <p class="imgLet">gitHub:${portfolio[i].github}</p>
                                 </div>
                             </div>
                         </div>
