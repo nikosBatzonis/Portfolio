@@ -158,6 +158,12 @@ span {
     }
 }
 
+@media screen and (max-width: 425px) {
+    .name {
+        padding-bottom: 20px;
+    }
+}
+
 .aboutMe {
     width: 40%;
     display: flex;

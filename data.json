@@ -64,7 +64,7 @@ let port = `[{
 },
 {
     "images": "images/cr1.png",
-    "vercel": "hhttps://fe-21-cr-01-nikos-batzonis.vercel.app/",
+    "vercel": "https://fe-21-cr-01-nikos-batzonis.vercel.app/",
     "github": "https://github.com/nikosBatzonis/FE21-CR01-nikosBatzonis",
     "skills": "HTML, CSS",
     "them": "CodeReview 1"
