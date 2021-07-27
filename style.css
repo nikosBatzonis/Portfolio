@@ -47,6 +47,7 @@ h3 {
 
 #navbar a:hover {
     color: #e0a96d;
+    cursor: pointer;
 }
 
 .images {
@@ -255,6 +256,7 @@ span {
     /*border: 1px solid #f1f1f1; */
     perspective: 1000px;
     /* Removethisifyoudon'twantthe3Deffect */
+    cursor: pointer;
 }
 
 
@@ -310,7 +312,7 @@ span {
     background-color: #201e20;
     color: #e0a96d;
     transform: rotateY(180deg);
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 
@@ -408,6 +410,7 @@ span {
 .contact a:hover,
 .contact p:hover {
     color: #ddc3a5;
+    cursor: pointer;
 }
 
 .a {

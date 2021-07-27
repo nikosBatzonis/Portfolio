@@ -3,7 +3,7 @@ let port = `[{
     "vercel": "https://project-frontend-amber.vercel.app/",
     "github": "https://github.com/nikosBatzonis/Project-Frontend",
     "skills": "HTML, CSS, Bootstrap, TS, Angular",
-    "them": "Frond end Project"
+    "them": "Team Project"
    
 },
 {
