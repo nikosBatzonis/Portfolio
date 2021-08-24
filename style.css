@@ -470,3 +470,62 @@ span {
         font-size: 10px;
     }
 }
+
+.in {
+    width: 50px;
+    margin-right: 15px;
+}
+
+@media screen and (min-width: 1199px) {
+    .in {
+        width: 50px;
+    }
+}
+
+@media screen and (max-width: 1198px) {
+    .in {
+        width: 37px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .in {
+        width: 28px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .in {
+        width: 35px;
+    }
+}
+
+@media screen and (max-width: 518px) {
+    .in {
+        width: 30px;
+    }
+}
+
+@media screen and (max-width: 452px) {
+    .in {
+        width: 28px;
+    }
+}
+
+@media screen and (max-width: 392px) {
+    .in {
+        width: 23px;
+    }
+}
+
+@media screen and (max-width: 344px) {
+    .in {
+        width: 20px;
+    }
+}
+
+@media screen and (max-width: 304px) {
+    .in {
+        width: 8%;
+    }
+}
